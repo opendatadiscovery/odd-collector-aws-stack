@@ -1,0 +1,12 @@
+default_pulling_interval: 10
+token: "Jx1Acn0EVYuZfkujw7TIYDSDROLyDR4yiPoompcF"
+platform_host_url: http://localhost:8080
+chunk_size: 1000
+plugins:
+  - type: aws_stack
+    name: aws_stack_adapter
+    description: "gets information about stack"
+    aws_access_key_id: "<your access key>"
+    aws_secret_access_key: "<your secret key>"
+    region: "us-east-1"
+    services: "StepFunctions,Lambda"
